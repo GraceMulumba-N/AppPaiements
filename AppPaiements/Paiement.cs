@@ -10,6 +10,7 @@ namespace AppPaiements
     {
         public string Nom { get; set; }
         public string Prenom { get; set; }
+        public double Montant { get; set; }
         public DateTime Date { get; set; }
         public void EffectuerPaiement();
        

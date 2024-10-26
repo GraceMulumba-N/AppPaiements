@@ -8,7 +8,7 @@ namespace AppPaiements
 {
     public class CarteCredit : Paiement
     {
-        public string NumeroCarte { get; set; }
+        public int NumeroCarte { get; set; }
         public double Montant { get; set; }
         public override void EffectuerPaiement()
         {
