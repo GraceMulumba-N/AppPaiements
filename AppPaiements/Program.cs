@@ -16,7 +16,7 @@ namespace AppPaiements
 
             // instances PayPal
             PayPal paiement1 = new PayPal { Nom = "Mike", Prenom = "Ross", Date = DateTime.Now, Email = "mike@gmail.com", Montant = 30.0 };
-            PayPal paiement2 = new PayPal { Nom = "Bob", Prenom = "Sponge", Date = DateTime.Now, Email = "spongebob@example.com", Montant = 75.0 };
+            PayPal paiement2 = new PayPal { Nom = "Bob", Prenom = "Sponge", Date = DateTime.Now, Email = "spongebob@gmail.com", Montant = 75.0 };
 
             // achats et paiements 
             utilisateur.Paiements.Add(achat1);
@@ -25,7 +25,7 @@ namespace AppPaiements
             utilisateur.Paiements.Add(paiement1);
             utilisateur.Paiements.Add(paiement2);
 
-            // Afficher les détails de tous les paiements
+            // Afficher détails des paiements
             foreach (var paiement in utilisateur.Paiements)
             {
                 Console.WriteLine(paiement.ToString());
