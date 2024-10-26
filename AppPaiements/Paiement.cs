@@ -11,7 +11,7 @@ namespace AppPaiements
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public DateTime Date { get; set; }
-        public abstract void EffectuerPaiement();
+        public void EffectuerPaiement();
        
 
     }
